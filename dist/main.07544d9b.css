@@ -85,7 +85,7 @@ button {
   background-color: #0973ba;
   border: none;
   padding: 20px;
-  margin: 1em;
+  margin: 0 1em 1em 0;
 }
 
 button,
@@ -125,6 +125,45 @@ h3,
 p,
 a {
   font-family: Arial;
+  line-height: 32px;
+}
+
+a {
+  font-weight: 600;
+}
+
+.title_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 500px;
+  justify-content: center;
+}
+
+.txt_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 1em 0 1em;
+}
+
+.layout_1 {
+  background-color: #0973ba;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #fff;
+}
+
+.layout_2 .img_wrapper,
+.layout_6 .img_wrapper {
+  margin: 0;
 }
 
 .layout_5 {
