@@ -1,3 +1,15 @@
+.logo {
+  background-color: $base-color;
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+  display: flex;
+}
+
+.logo img {
+  align-self: center;
+}
+
 nav {
   height: 50px;
   width: 150px;
@@ -8,6 +20,19 @@ nav {
   position: relative;
   overflow: visible;
   z-index: 1;
+}
+
+.logo::before,
+.logo::after {
+  content: "";
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  transform-origin: right top;
+  transform: skewX(20deg);
 }
 
 nav::before,

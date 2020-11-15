@@ -3,10 +3,26 @@ body {
   padding: 0;
 }
 
+img {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
 p,
 a {
   font-family: $main-font;
+}
+
+.layout_5 {
+  background-color: $base-color;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.layout_5 p,
+.layout_5 h2 {
+  color: #fff;
 }
