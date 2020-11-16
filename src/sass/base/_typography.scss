@@ -1,15 +1,8 @@
-h1{
-
-}
-
-h2{
-
-}
-
-h3{
-
-}
-
-p{
-    
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: $main-font;
+  line-height: 23px;
 }

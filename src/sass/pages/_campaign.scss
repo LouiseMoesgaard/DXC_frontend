@@ -7,23 +7,17 @@ img {
   width: 100%;
 }
 
-h1,
-h2,
-h3,
-p,
-a {
-  font-family: $main-font;
-  line-height: 32px;
-}
 
 a {
   font-weight: 600;
 }
+
 .title_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .button_wrapper {
   display: flex;
   flex-wrap: wrap;
