@@ -41,16 +41,12 @@ a {
   color: #fff;
 }
 
-.layout_2 .img_wrapper,
-.layout_6 .img_wrapper {
-  margin: 0;
-}
-
 .layout_5 {
   background-color: $base-color;
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 10vw 0;
 }
 
 .layout_5 p,
@@ -59,6 +55,146 @@ a {
 }
 
 
+/**SPLASH**/
 .splash {
   height: 100vh;
+  position: relative;
 }
+
+.content_wrapper_splash {
+  position: absolute;
+  top: 64%;
+  left: 10%;
+  right: 20%;
+}
+
+.content_wrapper_splash h1 {
+  font-size: 2.5rem;
+  line-height: 2.2rem;
+}
+
+.screw_right img {
+height: 100%;
+object-position: center;
+object-fit: cover;
+}
+
+.screw_right {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.screw_right:after {
+  content: '';
+  background-color: #fff;
+  display: block;
+  width: 200%;
+  height: 450px;
+  left: -350px;
+  position: absolute;
+  bottom: -150px;
+  transform: rotate(50deg);
+}
+
+
+/**LAY2**/
+.content_wrapper_2 .img_wrapper img {
+  height: 80vw;
+  width: 80vw;
+  object-fit: cover;
+  margin: 10vw 10vw 0 10vw;
+}
+
+.content_wrapper_2 .txt_wrapper {
+  margin: 0 10vw;
+}
+
+.content_wrapper_2 .button_wrapper {
+  margin: 10vw 0;
+}
+
+
+/**LAY4**/
+.layout_4 {
+  height: 100vh;
+  position: relative;
+}
+
+.splash_layout_4 {
+  height: 100%;
+}
+
+.splash_layout_4 img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.layout_4 .text_box {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  right: 30%;
+  background-color: white;
+  padding: 0 4vw;
+}
+
+/**LAY3**/
+.grid_wrapper {
+  padding: 10vw 0;
+}
+
+.grid_wrapper .img_wrapper {
+  text-align: center;
+  margin: 10vw 0;
+}
+
+.grid_wrapper .img_wrapper a {
+  text-decoration: none;
+  color: white;
+  margin-top: 5vw;
+}
+
+
+/**LAY6**/
+.content_wrapper_6 {
+  height: 100vh;
+  position: relative;
+}
+
+.content_wrapper_6 .txt_wrapper {
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  right: 10vw;
+}
+
+.content_wrapper_6 .button_wrapper {
+  margin: 10vw 0;
+}
+
+.screw_left img {
+  height: 100%;
+  object-position: 80%;
+  object-fit: cover;
+  }
+  
+  .screw_left {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .screw_left:after {
+    content: '';
+    background-color: #fff;
+    display: block;
+    width: 210%;
+    height: 450px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(60deg);
+  }
+  
