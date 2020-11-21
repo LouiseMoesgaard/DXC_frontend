@@ -1,6 +1,4 @@
 .layout_3 {
-  //   display: flex; for media query
-  //   justify-content: center; for media query
   background-color: $base-color;
 }
 
@@ -10,10 +8,19 @@
   flex-wrap: wrap;
 }
 
+.grid_wrapper .img_wrapper img {
+  margin: 0 0 5vw 0;
+}
 
-// for media query
-// .grid_wrapper {
-//   display: grid;
-//   grid-template-columns: repeat(3, 400px);
-//   grid-gap: 20px;
-// }
+@media only screen and (min-width: 1250px) {
+  .layout_3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-gap: 20px;
+  }
+}
