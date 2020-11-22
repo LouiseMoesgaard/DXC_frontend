@@ -13,7 +13,14 @@ function serializeForm(form) {
 	let obj = {};
 	let formData = new FormData(form);
 	for (let key of formData.keys()) {
-		obj[key] = formData.get(key);
+    if(key === name){
+      let name = formData.get(key).split(" ");
+      obj.firstname = name[0];
+      obj.lastname = name[1];
+    } else{
+        obj[key] = formData.get(key);
+    }
+ 
 	}
 	return obj;
 };

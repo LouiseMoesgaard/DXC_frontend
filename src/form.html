@@ -21,31 +21,37 @@
     <section class="contact">
 
         <form>
-
-            <label for="com"> Firmanavn
+            <label  for="com"> Firmanavn
                 <input id="com" name="company-name" type="text">
             </label>
 
             <label for="com_add"> Firma adresse
-                <input id="com_add" name="company-address" type="text">
+                <input id="com_add" name="company-address" type="text" placeholder="fx Fantasivej 37">
             </label>
 
-            <label for="first"> Fornavn
-                <input id="first" name="firstname" type="text">
-            </label>
+            <div class="grid_form">
+                <label class="post" for="com_post"> Postnummer
+                    <input id="com_add" name="company-post" type="text" placeholder="fx 1234">
+                </label>
 
-            <label for="last"> Efternavm
-                <input id="last" name="lastname" type="text">
+                <label class="city" for="com_city"> by
+                    <input id="com_add" name="company-city" type="text" placeholder="fx Fantasiby">
+                </label>
+            </div>
+
+           
+            <label for="name"> Navn
+                <input id="name" name="name" type="text">
             </label>
 
             <label for="tel"> Telefonnummer
-                <input id="tel" name="phone-number" type="tel">
+                <input id="tel" name="phone-number" type="tel" placeholder="fx 12345678">
             </label>
+         
 
             <label for="email"> Email
-                <input id="email" name="email" type="email">
+                <input id="email" name="email" type="email" placeholder="fx example@example.com">
             </label>
-
 
             <button type="submit">Send</button>
         </form>
