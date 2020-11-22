@@ -8,14 +8,12 @@
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 .grid_form{
   display: grid;
   grid-template-columns:1fr 1fr;
   grid-gap: 1rem;
 }
 
-=======
 .grid_wrapper .img_wrapper img {
   margin: 0 0 5vw 0;
 }
@@ -25,7 +23,6 @@
     display: flex;
     justify-content: center;
   }
->>>>>>> mediaqueries
 
   .grid_wrapper {
     display: grid;
