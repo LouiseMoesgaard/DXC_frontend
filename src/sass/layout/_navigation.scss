@@ -1,22 +1,22 @@
 .logo {
   background-color: $base-color;
-  height: 50px;
+  height: 60px;
   width: 150px;
-  padding: 5px;
   display: flex;
 }
 
-.logo img {
+.logo a {
   align-self: center;
+  margin-left: 5px;
 }
 
 nav {
   height: 50px;
-  width: 150px;
+  width: 110px;
   background-color: $base-color;
   padding: 5px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
   overflow: visible;
   z-index: 1;
@@ -32,7 +32,7 @@ nav {
   z-index: -1;
   top: 0;
   transform-origin: right top;
-  transform: skewX(20deg);
+  transform: skewX(-30deg);
 }
 
 nav::before,
@@ -45,12 +45,39 @@ nav::after {
   z-index: -1;
   top: 0;
   transform-origin: right bottom;
-  transform: skewX(20deg);
+  transform: skewX(30deg);
 }
 
 nav a {
-  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   align-self: center;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+
+@media only screen and (min-width: 900px) {
+.logo {
+  width: 200px;
+}
+
+.logo a {
+  margin-left: 10px;
+}
+
+nav {
+  width: 150px;
+}
+
+.logo::before,
+.logo::after {
+  content: "";
+  width: 250px;
+}
+
+nav a {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
 }

@@ -18,7 +18,7 @@
   margin: 0 0 5vw 0;
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 900px) {
   .layout_3 {
     display: flex;
     justify-content: center;
@@ -26,7 +26,8 @@
 
   .grid_wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 5%;
+    margin: 0 5vw;
   }
 }

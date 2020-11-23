@@ -6,7 +6,7 @@ let formElm = document.querySelector('form');
 formElm.addEventListener("submit", e=>{
     e.preventDefault();
     post(serializeForm(formElm));
-
+    showMoreInfo()
 })
 
 function serializeForm(form) {
@@ -39,7 +39,11 @@ function post(data) {
     })   
 }
 
-
+function showMoreInfo() {
+  window.scrollTo(0, 0);
+  document.querySelector(".asset").classList.remove("hide");
+  document.querySelector(".contact").classList.add("hide");
+}
 
 
 
