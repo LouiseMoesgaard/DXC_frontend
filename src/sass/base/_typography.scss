@@ -1,13 +1,30 @@
-h1,
-h2,
-h3,
-p,
 a,
+p,
 label {
   font-family: $main-font;
   line-height: 23px;
+  margin: 5px 0;
 }
 
-.grid_wrapper a {
-  font-size: 1.5em;
+
+h1,
+h2 {
+  font-family: $main-font;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: $main-font;
+  line-height: 23px;
+  margin: 20px 0;
+}
+
+a {
+  display: inline-block;
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  
 }

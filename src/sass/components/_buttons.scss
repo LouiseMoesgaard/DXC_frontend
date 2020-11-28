@@ -2,19 +2,23 @@ button {
   background-color: $base-color;
   border: none;
   padding: 20px 80px;
-  margin: 0 1em 1em 0;
+  color: #fff;
+  text-transform: uppercase;
 
     a {
       text-decoration: none;
       color: #fff;
       text-transform: uppercase;
       font-size: 1em;
+      display: inline;
     }
 }
 
-.layout_5 button,
-.layout_5 button a {
-  background-color: #fff;
-  color: $base-color;
+.layout_5 button {
+    background-color: #fff;
+    color: $base-color;
+  a {
+    background-color: #fff;
+    color: $base-color;
+  }
 }
-

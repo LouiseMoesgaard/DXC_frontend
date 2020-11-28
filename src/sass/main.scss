@@ -7,14 +7,76 @@
 
 // @import 'base/reset';
 @import 'base/typography';
+@import 'pages/campaign';
+@import 'pages/assets';
 
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
-@import 'layout/footer';
 @import 'layout/forms';
 
 @import 'components/buttons';
 
-@import 'pages/campaign';
-@import 'pages/assets';
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+img {
+    width: 100%;
+}
+
+a {
+    font-weight: 600;
+}
+
+.screw_right {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  
+    img {
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  
+    &:after {
+      content: "";
+      background-color: #fff;
+      display: block;
+      width: 400%;
+      height: 100vh;
+      position: absolute;
+      bottom: 0;
+      right: 62%;
+      transform: skewX(30deg);
+    }
+  }
+  
+.screw_left {
+height: 100%;
+position: relative;
+overflow: hidden;
+z-index: -1;
+
+img {
+    height: 100%;
+    object-position: 80%;
+    object-fit: cover;
+}
+
+&:after {
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 400%;
+    height: 100vh;
+    left: 62%;
+    position: absolute;
+    top: 0;
+    transform: skewX(30deg);
+}
+}

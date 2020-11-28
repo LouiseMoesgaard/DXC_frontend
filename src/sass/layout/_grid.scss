@@ -1,12 +1,29 @@
-.layout_3 {
-  background-color: $base-color;
-}
-
 .grid_wrapper {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  padding: 10vw 0;
+
+  a {
+    font-size: 1.5em;
+  }
+
+  .img_wrapper{
+    text-align: center;
+    margin: 10vw 0;
+
+    img {
+      margin: 0 0 5vw 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin-top: 5vw;
+    }
+  }
 }
+
 
 .grid_form{
   display: grid;
@@ -14,20 +31,24 @@
   grid-gap: 1rem;
 }
 
-.grid_wrapper .img_wrapper img {
-  margin: 0 0 5vw 0;
-}
 
 @media only screen and (min-width: 900px) {
-  .layout_3 {
-    display: flex;
-    justify-content: center;
-  }
-
   .grid_wrapper {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-gap: 5%;
     margin: 0 5vw;
+  }
+}
+
+@media only screen and (min-width: 1208px) {
+  .grid_wrapper{
+
+    .img_wrapper {
+      padding: 0;
+      img {
+        margin: 0;
+      }
+    }
   }
 }
